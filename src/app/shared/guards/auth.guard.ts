@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { BaseballService } from '../services/baseball.service';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ export class AuthGuard implements CanActivate {
 
 
   constructor(
-    private baseballService: BaseballService,
+    private authenticationService: AuthenticationService,
     private router: Router
   ){ } 
 
@@ -18,7 +18,7 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
     
-      const currentUser = this.baseballService.currentUserValue;
+      const currentUser = this.authenticationService.currentUserValue;
       
       if (currentUser) {
           // authorised so return true

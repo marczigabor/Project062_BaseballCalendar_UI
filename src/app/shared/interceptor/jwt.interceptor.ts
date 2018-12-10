@@ -2,16 +2,16 @@ import { Injectable } from '@angular/core';
 import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { BaseballService } from '../services/baseball.service';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
     
-    constructor(private baseballService: BaseballService) {}
+    constructor(private authenticationService: AuthenticationService) {}
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         // add authorization header with jwt token if available
-        let currentUser = this.baseballService.currentUserValue;
+        let currentUser = this.authenticationService.currentUserValue;
 
         if (currentUser && currentUser.auth_token) {
             request = request.clone({
