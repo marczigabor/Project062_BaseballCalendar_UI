@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BaseballService } from '../shared/services/baseball.service';
+import { AuthenticationService } from '../shared/services/authentication.service';
 import { LoginModel } from '../shared/model/LoginModel';
 import { Router } from '@angular/router';
 
@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   loginModel: LoginModel;
 
   constructor(
-    private baseballService: BaseballService,
+    private authenticationService: AuthenticationService,
     private router: Router   
   ) {
     this.loginModel = new LoginModel();
@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     console.log(value);
     if (valid) {
 
-      this.baseballService.login(value.userName, value.password)
+      this.authenticationService.login(value.userName, value.password)
         .subscribe( () => {
             this.router.navigate(['/books']);                         
         },

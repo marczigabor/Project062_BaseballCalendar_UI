@@ -1,3 +1,48 @@
 <div>
   {{selectedDate}}
 </div>
+
+<div *ngIf='scoreboard'>
+  <div  *ngFor="let item of scoreboard.Items">
+    <table *ngIf='item' cellpadding='0' cellspacing='0' class='inning bottom cardTable'  >
+      <tbody>
+          <tr class='game-status'>
+              <th>
+              </th>
+              <!-- R/H/E -->
+              <th class='min-600 runs'><abbr title='Runs'>R</abbr>
+              </th>
+              <th class='min-600 hits'><abbr title='Hits'>H</abbr>
+              </th>
+              <th class='min-600 errors'><abbr title='Errors'>E</abbr>
+              </th>
+          </tr>
+          <!-- Game Linescore / Away Team -->
+          <tr class='linescore away'>
+              <td class='team-info '>
+                  <strong class='team-name'>{{item.team[0].name}}</strong>
+              </td>
+              <td tabindex='0' class='min-600 runs'><strong>{{item.team[0].gameteam.R}}</strong>
+              </td>
+              <td tabindex='0' class='min-600 hits'><span>{{item.team[0].gameteam.H}}</span>
+              </td>
+              <td tabindex='0' class='min-600 errors'><span>{{item.team[0].gameteam.E}}</span>
+              </td>
+          </tr>
+          <!-- Game Linescore / Home Team -->
+          <tr class='linescore home'>
+              <td class='team-info '>
+                  <strong class='team-name'>{{item.team[1].name}}</strong>
+              </td>
+              <td tabindex='0' class='min-600 runs'><strong>{{item.team[1].gameteam.R}}</strong>
+              </td>
+              <td tabindex='0' class='min-600 hits'><span>{{item.team[1].gameteam.H}}</span>
+              </td>
+              <td tabindex='0' class='min-600 errors'><span>{{item.team[1].gameteam.E}}</span>
+              </td>
+          </tr>
+      </tbody>
+    </table>
+    <br/>
+  </div>
+</div>

@@ -1,0 +1,2922 @@
+﻿
+/*
+Don't edit this file even.
+This file will likely be overwritten with the next Jenkins build.
+Build Date: Monday, November 2nd, 2015, 5:41:23 AM GMT
+Version:1.0.1
+Questions? Comments? Contact Paolo Vaca 
+*/
+#scoreboard_index .container,
+#scoreboard2_index .container,
+#home_index .container {
+    background: #fff;
+    max-width: 990px
+}
+#scoreboard_index .drawer_container .container,
+#scoreboard2_index .drawer_container .container,
+#home_index .drawer_container .container {
+    background: transparent
+}
+#scoreboard_index .layout,
+#scoreboard2_index .layout,
+#home_index .layout {
+    position: relative;
+    overflow: hidden !important
+}
+#scoreboard_index .layout .page,
+#scoreboard2_index .layout .page,
+#home_index .layout .page {
+    overflow: visible
+}
+#scoreboard {
+    min-height: 220px;
+    position: static
+}
+#scoreboard abbr {
+    border: none;
+    font-variant: normal;
+    text-decoration: none;
+    outline: none
+}
+#scoreboard.hide-records .record span:last-of-type {
+    /*display: none*/
+}
+.cap.dark.lad::before,
+.cap.dark.la::before {
+    background-position: -32px -448px !important
+}
+.scoreboard-current-day-notice {
+    color: #333;
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    line-height: .8em;
+    padding-bottom: 10px;
+    width: 300px;
+    white-space: nowrap
+}
+@media screen and (max-width: 629px) {
+    #scoreboard {
+        position: relative
+    }
+}
+@media screen and (max-width: 767px) {
+    .scoreboard-current-day-notice {
+        /*display: none*/
+    }
+}
+@media screen and (min-width: 990px) {
+    #scoreboard_index .layout-scoreboard2,
+    #scoreboard2_index .layout-scoreboard2,
+    #home_index .layout-scoreboard2 {
+        min-height: 700px
+    }
+}
+.min-600 {
+    /*display: none*/
+}
+.whitespace {
+    clear: both
+}
+.strong {
+    font-weight: bold
+}
+.hidden,
+.ko-hidden {
+    /*display: none*/ !important;
+    visibility: hidden !important
+}
+.inline {
+    line-height: 1.2em
+}
+.inline>li {
+    display: inline;
+    margin: 0;
+    padding: 0
+}
+.list-object {
+    overflow: hidden
+}
+.list-object li {
+    float: left;
+    margin: 0 4px 0 0;
+    padding: 0
+}
+.list-object li.space-none-right,
+.list-object li:last-child {
+    margin-right: 0
+}
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.space-none {
+    margin: 0;
+    padding: 0
+}
+.label-indicator {
+    width: 32px
+}
+.label-indicator-small {
+    width: 20px
+}
+.pointer-disabled {
+    pointer-events: none
+}
+.icon-calendar {
+    background: url("../images/generic/calendar_icon.png") no-repeat -2px -2px;
+    display: block;
+    height: 22px;
+    width: 20px
+}
+.team-thumb .team {
+    background: url("../images/sprites/team_logo_thumb.png");
+    float: left;
+    height: 70px;
+    width: 62px
+}
+.team-thumb .ana {
+    background-position: 0 -980px
+}
+.team-thumb .ari {
+    background-position: 0 -70px
+}
+.team-thumb .atl {
+    background-position: 0 -140px
+}
+.team-thumb .bal {
+    background-position: 0 -210px
+}
+.team-thumb .bos {
+    background-position: 0 -280px
+}
+.team-thumb .chc {
+    background-position: 0 -350px
+}
+.team-thumb .cin {
+    background-position: 0 -420px
+}
+.team-thumb .cle {
+    background-position: 0 -490px
+}
+.team-thumb .col {
+    background-position: 0 -560px
+}
+.team-thumb .cws {
+    background-position: 0 -630px
+}
+.team-thumb .det {
+    background-position: 0 -700px
+}
+.team-thumb .fla {
+    background-position: 0 -770px
+}
+.team-thumb .hou {
+    background-position: 0 -840px
+}
+.team-thumb .kc {
+    background-position: 0 -910px
+}
+.team-thumb .la {
+    background-position: 0 -1050px
+}
+.team-thumb .mia {
+    background-position: 0 -770px
+}
+.team-thumb .mil {
+    background-position: 0 -1120px
+}
+.team-thumb .min {
+    background-position: 0 -1190px
+}
+.team-thumb .nym {
+    background-position: 0 -1260px
+}
+.team-thumb .nyy {
+    background-position: 0 -1330px
+}
+.team-thumb .oak {
+    background-position: 0 -1400px
+}
+.team-thumb .phi {
+    background-position: 0 -1470px
+}
+.team-thumb .pit {
+    background-position: 0 -1540px
+}
+.team-thumb .sd {
+    background-position: 0 -1610px
+}
+.team-thumb .sea {
+    background-position: 0 -1680px
+}
+.team-thumb .sf {
+    background-position: 0 -1750px
+}
+.team-thumb .stl {
+    background-position: 0 -1820px
+}
+.team-thumb .tb {
+    background-position: 0 -1890px
+}
+.team-thumb .tex {
+    background-position: 0 -1960px
+}
+.team-thumb .tor {
+    background-position: 0 -2030px
+}
+.team-thumb .was {
+    background-position: 0 -2100px
+}
+.team-thumb .al {
+    background-position: 0 -2170px
+}
+.team-thumb .nl {
+    background-position: 0 -2240px
+}
+#scoreboard .cap::before {
+    background: url("../images/sprites/team_logos.png") no-repeat -32px 0
+}
+@media (min-resolution: 124dpi),
+(-webkit-min-device-pixel-ratio: 1.3),
+(min--moz-device-pixel-ratio: 1.3),
+(-o-min-device-pixel-ratio: 4/3),
+(min-device-pixel-ratio: 1.3),
+(min-resolution: 1.3dppx) {
+    #scoreboard .cap::before {
+        background: url("../images/sprites/team_logos@2x.png") no-repeat -32px 0;
+        -webkit-background-size: 64px auto;
+        -moz-background-size: 64px auto;
+        background-size: 64px auto
+    }
+    .icon-calendar {
+        background: url("../images/generic/calendar_icon@2x.png") no-repeat -2px -2px;
+        -webkit-background-size: 22px auto;
+        -moz-background-size: 22px auto;
+        background-size: 22px auto
+    }
+}
+.section-scoreboard header h2,
+.section-scoreboard2 header h2 {
+    text-transform: uppercase
+}
+.section-scoreboard .nav-container,
+.section-scoreboard2 .nav-container {
+    margin-bottom: 1.5em;
+    overflow: visible;
+    position: relative
+}
+.footer-pagination {
+    font-size: 13px;
+    line-height: 16px;
+    position: relative;
+    margin-top: 3em;
+    vertical-align: text-top;
+    z-index: 1
+}
+.footer-pagination li {
+    border-right: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 5px;
+    padding-right: 8px
+}
+.footer-pagination li:last-child {
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0
+}
+.footer-pagination .scoreboard-current-date {
+    text-transform: capitalize
+}
+[data-has-games="true"] {
+    display: block
+}
+[data-has-games="false"] {
+    /*display: none*/
+}
+.games {
+    clear: both;
+    font-size: 12px;
+    margin: 0 auto;
+    min-height: 70px;
+    overflow: hidden;
+    width: 100%
+}
+.games .cap::before {
+    float: left;
+    margin: 2px 0 0 3px
+}
+.games table {
+    border-collapse: separate;
+    position: relative;
+    width: 100%
+}
+.games table td {
+    padding: 0
+}
+.game {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    clear: both;
+    color: #333;
+    font-size: inherit;
+    margin: 0 0 14px 0;
+    position: relative;
+    vertical-align: top;
+    will-change: contents, transform;
+    width: 100%;
+    z-index: 2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+.game:last-of-type {
+    margin-bottom: 0
+}
+.game.warmup td.min-600,
+.game.live td.min-600,
+.game.inprogress td.min-600,
+.game.during td.min-600,
+.game.review td.min-600,
+.game.managerchallenge td.min-600,
+.game.delayed td.min-600,
+.game.delayedstart td.min-600,
+.game.completedearly td.min-600,
+.game.final td.min-600,
+.game.nixed td.min-600,
+.game.suspended td.min-600,
+.game.postponed td.min-600,
+.game.gameover td.min-600,
+.game.warmup th.min-600,
+.game.live th.min-600,
+.game.inprogress th.min-600,
+.game.during th.min-600,
+.game.review th.min-600,
+.game.managerchallenge th.min-600,
+.game.delayed th.min-600,
+.game.delayedstart th.min-600,
+.game.completedearly th.min-600,
+.game.final th.min-600,
+.game.nixed th.min-600,
+.game.suspended th.min-600,
+.game.postponed th.min-600,
+.game.gameover th.min-600 {
+    display: table-cell
+}
+.game.alert,
+.game.review,
+.game.managerchallenge {
+    border-color: #000
+}
+.game.no-hitter {
+    border-color: #dc0000
+}
+.game .game-status,
+.game.after .game-status,
+.game.suspended .game-status {
+    color: #333
+}
+.game.after .game-status th:last-child,
+.game.final .game-status th:last-child,
+.game.nixed .game-status th:last-child,
+.game.suspended .game-status th:last-child,
+.game.postponed .game-status th:last-child {
+    /*display: none*/
+}
+.game .game-lookin,
+.game .game-review,
+.game .game-alert,
+.game .game-no-hitter {
+    background: #000;
+    border-top: 1px solid #ccc;
+    font-family: mlb_primary;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4em;
+    padding: 7px;
+    text-align: center;
+    text-transform: capitalize
+}
+.game .game-no-hitter {
+    background: #dc0000
+}
+.game .game-lookin,
+.game .game-review,
+.game .game-alert,
+.game .game-no-hitter {
+    overflow: hidden
+}
+.game .game-lookin p,
+.game .game-review p,
+.game .game-alert p,
+.game .game-no-hitter p {
+    float: none;
+    margin: 0 auto;
+    width: 90%
+}
+.game .game-review {
+    color: #fc8126
+}
+.game .game-alert {
+    color: lightblue
+}
+.game .game-lookin {
+    color: #fdcc00
+}
+.game .game-lookin .lookin-expanded {
+    /*display: none*/
+}
+.game .game-no-hitter {
+    color: #fff;
+    text-transform: none
+}
+.no-game,
+.game-warning {
+    background-color: #ffc;
+    border: 1px solid #fc0;
+    /*display: none*/;
+    font-size: 12px;
+    margin: 0 0 1em 0;
+    padding: 8px;
+    text-align: center;
+    font-style: italic;
+    -webkit-border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -moz-background-clip: padding;
+    border-radius: 4px;
+    background-clip: padding-box
+}
+.games-expanded .reviewAlerts::after {
+    /*display: none*/;
+    float: none
+}
+.games-expanded .status-text-description .status-detail.game-status-display-text {
+    width: 33%
+}
+.games-expanded .status-text-description .status-detail.game-description {
+    display: inline-block
+}
+.status-text-description {
+    overflow: hidden
+}
+.status-text-description .status-detail {
+    text-align: left;
+    display: inline-block
+}
+.status-text-description .status-detail.game-status-display-text {
+    width: 99%
+}
+.status-text-description .status-detail.game-description {
+    /*display: none*/;
+    text-align: center;
+    width: 33%
+}
+.game-status {
+    margin: 0;
+    text-align: center
+}
+.game-status td {
+    border-top: 1px solid #ccc;
+    vertical-align: middle
+}
+.game-status th {
+    border-bottom: 0;
+    font-size: 13px;
+    padding: 6px 0 4px
+}
+.game-status th h4 {
+    background: none;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    padding: 0
+}
+.game-status th.runs {
+    border-left: 1px solid #ccc;
+    font-weight: bold
+}
+.game-status th.inning,
+.game-status th.hits,
+.game-status th.errors {
+    color: #999
+}
+.game-status th.inning {
+    /*display: none*/
+}
+.game-status th.active {
+    background: none;
+    font-weight: normal
+}
+.game-status .status {
+    font-family: mlb_primary;
+    font-size: 14px;
+    margin-left: 9px;
+    position: relative;
+    text-align: left
+}
+.game-status .status h3 {
+    font-size: inherit
+}
+.game-status .status h3,
+.game-status .status span {
+    height: auto
+}
+.nixed-game,
+.resumed-game,
+.description {
+    padding: 5px
+}
+.split-squad-game::before {
+    content: "";
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-right: 19px solid #295393;
+    display: block;
+    margin-left: -3px;
+    margin-top: -12px;
+    position: absolute;
+    height: 0;
+    width: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)";
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+.split-squad {
+    color: #fff;
+    font-style: italic;
+    position: absolute;
+    left: 2px;
+    margin: 0;
+    top: 3px
+}
+.bases {
+    clear: both
+}
+.bases ul {
+    left: -4px;
+    padding: 0;
+    position: relative;
+    top: -40px
+}
+.bases li {
+    background: url("../images/sprites/bases.png") no-repeat 0 0;
+    padding: 0;
+    position: absolute;
+    height: 30px;
+    width: 30px
+}
+.bases li.runner {
+    background-position: -29px 0
+}
+.bases li.first-base {
+    left: 32px;
+    top: 31px
+}
+.bases li.second-base {
+    left: 18px;
+    top: 18px
+}
+.bases li.third-base {
+    left: 4px;
+    top: 31px
+}
+.inning-detail {
+    clear: both
+}
+.inning-detail p {
+    display: inline;
+    margin: 0;
+    padding: 0
+}
+.links-list {
+    /*display: none*/;
+    text-align: center;
+    padding-top: 1px
+}
+.links-list li {
+    display: inline-block
+}
+.links {
+    background: #f3f3f3;
+    margin: 0;
+    overflow: hidden;
+    height: 33px;
+    width: 100%;
+    border-top: 1px solid #ccc
+}
+.links ul {
+    list-style: none;
+    margin-top: 5px
+}
+.links li {
+    background: #f3f3f3;
+    border: 1px #c4c4c4 solid;
+    margin: 0;
+    height: 23px;
+    line-height: 19px;
+    margin-left: .3em;
+    min-width: 40px;
+    height: 21px;
+    width: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+.links li:first-child {
+    margin-left: 0
+}
+.links li:hover {
+    background: #fff
+}
+.links a {
+    cursor: pointer;
+    font-family: mlb_primary;
+    font-size: 12px;
+    margin: 0;
+    padding: 4px;
+    text-transform: uppercase
+}
+.links a,
+.links a span {
+    color: #333;
+    font-weight: normal;
+    height: 19px;
+    line-height: 21px
+}
+.links .mlbtv,
+.links .gameday-icon-button,
+.links .atbat,
+.links .listen,
+.links .tickets,
+.links .mlbtv span,
+.links .gameday-icon-button span,
+.links .atbat span,
+.links .listen span {
+    background: none;
+    font-size: 12px;
+    color: #333;
+    padding: 0
+}
+.links .mlbtv,
+.links .buyMlbtv,
+.links .gameday-icon-button,
+.links .atbat,
+.links .tickets,
+.links .listen {
+    background: url("../images/sprites/icon_sprite.png") no-repeat 0 4px;
+    padding-left: 18px
+}
+.links .tickets,
+.links .highlights {
+    padding-left: 20px
+}
+.links .gameday-icon-button,
+.links .listen {
+    padding-left: 22px;
+    padding-top: 2px
+}
+.links .tickets,
+.links .listen {
+    padding-top: 2px;
+    padding-bottom: 2px
+}
+.links .highlights {
+    background: url("../images/generic/video.gif") 4px 4px no-repeat
+}
+.links .gameday-icon-button {
+    background-position: 2px -22px
+}
+.links .gameday-icon-button:hover {
+    background-position: 2px -93px
+}
+.links .listen {
+    background-position: 2px -46px
+}
+.links .listen:hover {
+    background-position: 2px -117px
+}
+.links .tickets {
+    background-position: 2px -139px
+}
+.links .buyMlbtv,
+.links .mlbtv {
+    margin: 0 0 0 5px
+}
+.links .mlbtv:hover,
+.links .buyMlbtv:hover {
+    background-position: 0 -67px
+}
+.links .gameday {
+    background: #f8f8f8;
+    border-top: none;
+    font-family: mlb_primary;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    cursor: pointer;
+    display: block
+}
+.links .gameday::before {
+    background: url("../images/sprites/icon_sprite@2x.png") no-repeat 0 -27px;
+    content: "";
+    display: inline-block;
+    margin-right: 3px;
+    height: 16px;
+    width: 20px;
+    vertical-align: sub;
+    -webkit-background-size: 20px auto;
+    -moz-background-size: 20px auto;
+    background-size: 20px auto
+}
+.links .gameday:hover {
+    background-color: #fff
+}
+.links .gameday:hover::before {
+    background-position: 0 -110px
+}
+.player-stats {
+    border-top: 1px solid #ccc;
+    color: #333;
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    text-align: left
+}
+.player-stats h5,
+.player-stats h6 {
+    background: none;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    padding: 0
+}
+.player-stats .game-detail {
+    /*display: none*/
+}
+.player-stats .player-stats-list {
+    padding: 5px
+}
+.player-stats .probable p {
+    margin: 0 0 4px 0
+}
+.player-stats .team-thumb {
+    *zoom: 1;
+    margin: 0;
+    padding: 0
+}
+.player-stats .team-thumb:before,
+.player-stats .team-thumb:after {
+    content: " ";
+    display: table;
+    line-height: 0
+}
+.player-stats .team-thumb:after {
+    clear: both
+}
+.player-stats .current-pitcher a,
+.player-stats .current-batter a,
+.player-stats .current-pitcher abbr,
+.player-stats .current-batter abbr,
+.player-stats .current-pitcher span,
+.player-stats .current-batter span {
+    padding-right: 2px
+}
+.player-stats li {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0
+}
+.player-stats li.last-play {
+    display: block;
+    margin-top: .2em
+}
+.player-stats li.last-play p {
+    margin: 0;
+    line-height: 1.2em
+}
+.player-stats li.last-play .last-play-full,
+.player-stats li.last-play .last-play-truncated,
+.player-stats li.last-play .last-play-expanded {
+    display: block;
+    max-height: 64px;
+    width: 100%
+}
+.player-stats li.last-play .last-play-full {
+    max-height: none
+}
+.player-stats li.last-play .last-play-truncated,
+.player-stats li.last-play .last-play-expanded {
+    /*display: none*/
+}
+.player-stats li:last-of-type,
+.player-stats li div:last-of-type {
+    margin-right: 0
+}
+.player-stats li.home-runs {
+    display: block
+}
+.player-stats li.home-runs a,
+.player-stats li.home-runs abbr,
+.player-stats li.home-runs span {
+    padding-right: 2px
+}
+.player-stats div {
+    line-height: 1.2em;
+    margin: 4px 5px 0 0
+}
+.player-stats span {
+    display: inline-block
+}
+.player-stats .no-hitter {
+    border-radius: 3px;
+    background-color: #dc0000;
+    color: #fff;
+    margin: 0 5px 5px 5px;
+    padding: 1px 4px
+}
+.after .player-stats .post-game-pitchers,
+.final .player-stats .post-game-pitchers,
+.after .player-stats .home-runs,
+.final .player-stats .home-runs {
+    display: inline
+}
+.after .player-stats .post-game-pitchers p,
+.final .player-stats .post-game-pitchers p,
+.after .player-stats .home-runs p,
+.final .player-stats .home-runs p {
+    display: inline;
+    margin: 0;
+    padding: 0
+}
+.after .player-stats .post-game-pitchers a,
+.final .player-stats .post-game-pitchers a,
+.after .player-stats .home-runs a,
+.final .player-stats .home-runs a,
+.after .player-stats .post-game-pitchers abbr,
+.final .player-stats .post-game-pitchers abbr,
+.after .player-stats .home-runs abbr,
+.final .player-stats .home-runs abbr,
+.after .player-stats .post-game-pitchers span,
+.final .player-stats .post-game-pitchers span,
+.after .player-stats .home-runs span,
+.final .player-stats .home-runs span {
+    padding-right: 2px
+}
+.after .player-stats .post-game-pitchers .home-run--player,
+.final .player-stats .post-game-pitchers .home-run--player,
+.after .player-stats .home-runs .home-run--player,
+.final .player-stats .home-runs .home-run--player {
+    display: inline;
+    padding: 0
+}
+.game-media {
+    cursor: pointer;
+    /*display: none*/;
+    position: absolute;
+    right: 18px;
+    top: 18px
+}
+.video-thumb figure {
+    background: #ddd;
+    display: block;
+    position: relative;
+    height: 70px;
+    width: 125px
+}
+.video-thumb.condensed figcaption {
+    height: 12px
+}
+.video-thumb figcaption {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    color: #fff;
+    height: 24px;
+    left: 0;
+    overflow: hidden;
+    padding: 4px;
+    position: absolute;
+    width: 116px;
+    z-index: 3
+}
+.video-thumb figcaption p {
+    box-shadow: 0 -1px 1px #000;
+    line-height: 12px;
+    margin: 0
+}
+.video-thumb img,
+.video-thumb .faux-img {
+    display: block;
+    height: 70px;
+    margin: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 124px;
+    z-index: 2
+}
+.video-thumb .faux-img {
+    background-size: contain
+}
+.during .player-stats .home-runs,
+.suspended .player-stats .home-runs,
+.inprogress .player-stats .home-runs {
+    /*display: none*/
+}
+.device-desktop .player-stats a:hover,
+.is-desktop .player-stats a:hover {
+    text-decoration: underline
+}
+.device-desktop .player-stats .video-thumb:hover figcaption,
+.is-desktop .player-stats .video-thumb:hover figcaption {
+    background: #000
+}
+.game-situation {
+    margin: 0 auto;
+    width: 54px
+}
+.inning-detail {
+    color: #333;
+    font-size: 12px;
+    font-family: Helvetica Neue, sans-serif;
+    line-height: 1em;
+    position: relative;
+    text-transform: none;
+    top: 23px
+}
+.inning-detail .count {
+    padding-top: .5em
+}
+.inning-detail .count--outs {
+    padding-left: 2px
+}
+.inning-detail span {
+    display: block;
+    margin: 0 auto;
+    text-align: center
+}
+.linescore {
+    background: #fff;
+    clear: both;
+    text-align: center
+}
+.linescore .team {
+    float: left;
+    margin-left: 5px
+}
+.linescore td {
+    border-top: 1px solid #ccc;
+    position: relative;
+    vertical-align: middle
+}
+.linescore td.team-info {
+    position: relative;
+    text-align: left;
+    width: 50%
+}
+.linescore td.team-info .team-abbrev {
+    /*display: none*/
+}
+.linescore td.team-info .team-abbrev,
+.linescore td.team-info .team-name {
+    float: left
+}
+.linescore td.team-info span:first-child {
+    padding-top: 0
+}
+.linescore td.team-info .probables {
+    color: #858585;
+    float: right;
+    padding: 12px 5px 0 0
+}
+.linescore td.team-info .probables span {
+    text-transform: uppercase
+}
+.linescore td.team-info .probables a {
+    font-weight: bold
+}
+.linescore td.team-info .probables.min-600 {
+    /*display: none*/
+}
+.linescore td .team-record,
+.linescore td .team-abbrev,
+.linescore td .team-name {
+    font-size: 14px;
+    font-family: Helvetica Neue, sans-serif;
+    line-height: 1em
+}
+.linescore td .team-record {
+    font-size: 12px
+}
+.linescore td .team-name {
+    text-transform: capitalize
+}
+.linescore td .record {
+    float: left;
+    line-height: 1.25;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 1px 0 0 2px;
+    padding: 3px 0
+}
+.linescore td .record .team-record {
+    color: #858585;
+    clear: both;
+    margin: 0
+}
+.linescore td .record .team-record span {
+    display: inline
+}
+.linescore td .record strong {
+    color: #333;
+    font-weight: bold;
+    display: block
+}
+.linescore td .record span {
+    display: block;
+    font-weight: normal
+}
+.linescore td span {
+    background-image: none !important;
+    margin: 0;
+    padding: 0
+}
+.linescore td.inning,
+.linescore td.runs,
+.linescore td.errors,
+.linescore td.hits {
+    border-left: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: normal;
+    width: 12%
+}
+.linescore td.inning span,
+.linescore td.runs span,
+.linescore td.errors span,
+.linescore td.hits span {
+    background-image: none !important;
+    margin: 0;
+    padding: 0
+}
+.linescore td.active {
+    background: transparent
+}
+.linescore td.inning {
+    /*display: none*/
+}
+.linescore td.runs {
+    background: #e6e6e6;
+    font-weight: bold
+}
+.linescore td.errors {
+    border-right: 1px solid #ccc
+}
+.linescore .split-squad {
+    /*display: none*/;
+    font-size: 9px
+}
+.linescore .split-squad-game {
+    margin: 4px 0 0 3px
+}
+.linescore .split-squad-game .split-squad {
+    display: block
+}
+.nixed .linescore td.errors,
+.after .linescore td.errors,
+.before .linescore td.errors {
+    border-right: none
+}
+.top .away .active {
+    background: #e6e6e6
+}
+.top .home .active {
+    background: none
+}
+.bottom .away .active {
+    background: none
+}
+.bottom .home .active {
+    background: #e6e6e6
+}
+.inning-pagination {
+    /*display: none*/;
+    position: absolute;
+    right: 0;
+    top: 2px
+}
+.inning-pagination li {
+    line-height: 0;
+    padding: 0 2px
+}
+.inning-pagination .inning-pagination-trigger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+    margin: 0;
+    padding: 0
+}
+.inning-pagination .inning-pagination-trigger:active {
+    outline: none
+}
+.inning-pagination .inning-pagination-trigger.prev {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #ccc;
+    display: inline-block;
+    height: 0;
+    width: 0
+}
+.inning-pagination .inning-pagination-trigger.prev:hover {
+    border-right: 8px solid #999
+}
+.inning-pagination .inning-pagination-trigger.next {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #ccc;
+    display: inline-block;
+    height: 0;
+    width: 0
+}
+.inning-pagination .inning-pagination-trigger.next:hover {
+    border-left: 8px solid #999
+}
+@media screen and (max-width: 629px) {
+    .game.pre .team-info,
+    .game.preview .team-info,
+    .game.pregame .team-info {
+        width: 100%
+    }
+    [data-sponsorship="true"] .game:nth-child(4n) {
+        margin-bottom: 270px
+    }
+    [data-sponsorship="true"] .game:nth-child(4n):last-child {
+        margin-bottom: 0
+    }
+}
+@media screen and (min-width: 630px) {
+    .game-type-label {
+        /*/*display: none*/*/
+    }
+    .game {
+        display: inline-block;
+        margin: 0 0 14px 0;
+        position: relative;
+        width: 300px
+    }
+    .game:nth-child(2n) {
+        margin-left: 6px
+    }
+    .game .game-alert {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+    .game-status th {
+        border: 0;
+        display: table-cell
+    }
+    .game-status th:last-child {
+        /*/*display: none*/*/
+    }
+    .game-status th:first-of-type {
+        border-right: 0
+    }
+    .game.live .game-status th:last-child,
+    .game.inprogress .game-status th:last-child,
+    .game.managerchallenge .game-status th:last-child {
+        /*display: none*/
+    }
+}
+@media screen and (min-width: 768px) {
+    .game {
+        width: 206px
+    }
+    .game:nth-child(2n+7) {
+        margin-left: 0
+    }
+    .game:nth-child(2n+6) {
+        margin-left: 6px
+    }
+    .games-expanded {
+        width: 100%
+    }
+    .games-expanded .game {
+        margin-left: 0;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+    .games-expanded .game:nth-child(2n),
+    .games-expanded .game:nth-child(2n+6),
+    .games-expanded .game:nth-child(3n+2),
+    .games-expanded .game:nth-child(3n+3) {
+        margin-left: 0
+    }
+    .games-expanded .game.before th,
+    .games-expanded .game.preview th,
+    .games-expanded .game.before td,
+    .games-expanded .game.preview td {
+        /*display: none*/
+    }
+    .games-expanded .game.before th:first-child,
+    .games-expanded .game.preview th:first-child,
+    .games-expanded .game.before td:first-child,
+    .games-expanded .game.preview td:first-child {
+        display: table-cell
+    }
+    .games-expanded .game.before .team-info .probables,
+    .games-expanded .game.preview .team-info .probables {
+        display: block
+    }
+    .games-expanded .game.before .team-info .probables li:first-child,
+    .games-expanded .game.preview .team-info .probables li:first-child {
+        /*display: none*/
+    }
+    .games-expanded .game.before .player-stats,
+    .games-expanded .game.preview .player-stats {
+        /*display: none*/
+    }
+    .games-expanded .game.suspended .runs,
+    .games-expanded .game.suspended .hits,
+    .games-expanded .game.suspended .errors {
+        display: table-cell
+    }
+    .games-expanded .game.suspended th.max-600 {
+        /*display: none*/
+    }
+    .games-expanded .game.suspended .player-stats {
+        display: block
+    }
+    .games-expanded .game-status th:first-of-type {
+        width: 62%
+    }
+    .games-expanded .game-status .inning,
+    .games-expanded .game-status .runs,
+    .games-expanded .game-status .hits,
+    .games-expanded .game-status .errors {
+        width: 33px
+    }
+    .games-expanded .game-lookin .lookin-expanded {
+        display: inline
+    }
+    .games-expanded .game-lookin .lookin-condensed {
+        /*display: none*/
+    }
+}
+@media screen and (min-width: 990px) {
+    .game {
+        width: 212.5px
+    }
+    .game:nth-child(3n+1) {
+        margin-left: 0
+    }
+    .game:nth-child(3n+2),
+    .game:nth-child(3n+3) {
+        margin-left: 6px
+    }
+    .games-expanded .game-status th:first-of-type {
+        width: 22%
+    }
+    .games-expanded .game-status .inning {
+        display: table-cell
+    }
+    .games-expanded .inning-pagination {
+        display: block
+    }
+    .games-expanded .game-review,
+    .games-expanded .game-alert,
+    .games-expanded .game-lookin,
+    .games-expanded .game-no-hitter {
+        text-align: left
+    }
+    .games-expanded .game-review p,
+    .games-expanded .game-alert p,
+    .games-expanded .game-lookin p,
+    .games-expanded .game-no-hitter p {
+        float: left;
+        margin-top: 2px;
+        position: relative;
+        width: 60%
+    }
+    .games-expanded .game.suspended th,
+    .games-expanded .game.suspended td {
+        display: table-cell
+    }
+    .games-expanded .reviewAlerts::after {
+        display: inline-block;
+        float: right
+    }
+}
+@media screen and (min-width: 630px) {
+    .bases ul {
+        left: 1px;
+        top: -36px
+    }
+}
+@media (min-resolution: 124dpi),
+(-webkit-min-device-pixel-ratio: 1.3),
+(min--moz-device-pixel-ratio: 1.3),
+(-o-min-device-pixel-ratio: 4/3),
+(min-device-pixel-ratio: 1.3),
+(min-resolution: 1.3dppx) {
+    .bases li {
+        background: url("../images/sprites/bases@2x.png") no-repeat;
+        -webkit-background-size: auto 30px;
+        -moz-background-size: auto 30px;
+        background-size: auto 30px
+    }
+}
+@media screen and (min-width: 630px) {
+    .games.preview .gameday,
+    .games.pre .gameday {
+        border-top-width: 1px
+    }
+    .device-tablet .links-list {
+        /*display: none*/
+    }
+    .device-tablet .links .gameday {
+        display: block
+    }
+}
+@media screen and (min-width: 990px) {
+    .links-list {
+        display: block
+    }
+    .links .gameday {
+        /*display: none*/
+    }
+    .games-expanded .links .screen_reader_link {
+        left: 0;
+        padding: 0 4px 0 2px;
+        position: relative;
+        top: 0;
+        height: auto;
+        width: auto
+    }
+}
+@media (min-resolution: 124dpi),
+(-webkit-min-device-pixel-ratio: 1.3),
+(min--moz-device-pixel-ratio: 1.3),
+(-o-min-device-pixel-ratio: 4/3),
+(min-device-pixel-ratio: 1.3),
+(min-resolution: 1.3dppx) {
+    .links .mlbtv,
+    .links .buyMlbtv,
+    .links .gameday-icon-button,
+    .links .atbat,
+    .links .tickets,
+    .links .listen {
+        background-image: url("../images/sprites/icon_sprite@2x.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: 17px auto;
+        -moz-background-size: 17px auto;
+        background-size: 17px auto
+    }
+}
+@media screen and (max-width: 629px) {
+    .before .player-stats {
+        /*display: none*/
+    }
+    .suspended .player-stats {
+        display: block
+    }
+    .after .player-stats .home-runs,
+    .final .player-stats .home-runs {
+        display: block
+    }
+    .status-text-description .status-detail.game-status-display-text {
+        width: 33%
+    }
+    .status-text-description .status-detail.game-description {
+        display: inline-block
+    }
+}
+@media screen and (min-width: 630px) {
+    .player-stats {
+        min-height: 107px;
+        height: 107px
+    }
+    .player-stats>div {
+        margin-top: 0
+    }
+    .player-stats .home-runs .label-item {
+        max-width: 20px;
+        min-width: 20px;
+        width: 10%
+    }
+    .player-stats .home-runs .item-wrap {
+        width: 86%
+    }
+    .player-stats li {
+        display: block;
+        padding-bottom: 0
+    }
+    .player-stats li.last-play .last-play-full {
+        /*display: none*/
+    }
+    .player-stats li.last-play .last-play-truncated {
+        display: block
+    }
+    .player-stats .final .player-stats li,
+    .player-stats .gameover .player-stats li,
+    .player-stats .after .player-stats li,
+    .player-stats .inline li {
+        display: inline-block
+    }
+    .final .player-stats,
+    .gameover .player-stats,
+    .after .player-stats {
+        height: auto
+    }
+    .games-expanded .after .player-stats .home-runs,
+    .games-expanded .final .player-stats .home-runs {
+        display: block
+    }
+    .games-expanded .during .player-stats .home-runs p {
+        display: inline
+    }
+    .device-tablet .games-expanded .game-media,
+    .device-tablet .games-expanded .video-thumb {
+        /*display: none*/
+    }
+}
+@media screen and (min-width: 990px) {
+    .games-expanded .player-stats-list {
+        width: 74%
+    }
+    .games-expanded .player-stats-list .last-play .last-play-full,
+    .games-expanded .player-stats-list .last-play .last-play-expanded {
+        /*display: none*/
+    }
+    .games-expanded .player-stats-list .last-play .last-play-truncated {
+        display: block
+    }
+    .games-expanded .after .player-stats .home-runs,
+    .games-expanded .final .player-stats .home-runs,
+    .games-expanded .during .player-stats .home-runs,
+    .games-expanded .inprogress .player-stats .home-runs {
+        display: block
+    }
+    .games-expanded .game-media,
+    .games-expanded .video-thumb {
+        display: block
+    }
+}
+@media screen and (min-width: 630px) {
+    .game-situation {
+        margin-right: 0;
+        width: 64px
+    }
+    .game-situation .inning-detail {
+        margin-left: 0;
+        margin-right: 0;
+        top: 52px
+    }
+    .game-situation .inning-detail span {
+        display: block
+    }
+    .situation-wrap {
+        border-right: 1px solid #ccc;
+        display: block;
+        float: left;
+        height: 100%;
+        margin-right: 5px;
+        min-height: 107px
+    }
+    .situation-wrap .bases {
+        width: auto
+    }
+    .situation-wrap .bases ul {
+        top: -8px
+    }
+}
+@media screen and (min-width: 990px) {
+    .games-expanded .situation-wrap {
+        width: 154px
+    }
+    .games-expanded .game-situation {
+        margin: 0 auto
+    }
+}
+@media screen and (min-width: 630px) {
+    .runs,
+    .hits,
+    .errors {
+        width: 12%
+    }
+    .linescore td.team-info {
+        width: 40%;
+        min-width: 80px
+    }
+    .linescore td.team-info .team-abbrev {
+        display: block
+    }
+    .linescore td.team-info .team-name {
+        /*display: none*/
+    }
+    .linescore td.errors {
+        border-right: none
+    }
+    .linescore .errors {
+        border-right: 0
+    }
+    .linescore .min-600 {
+        display: table-cell
+    }
+    .linescore .max-600 {
+        /*/*display: none*/*/
+    }
+}
+@media screen and (min-width: 768px) {
+    .games-expanded .linescore .team-info {
+        width: 62%
+    }
+    .games-expanded .linescore .team-info .team-abbrev {
+        /*display: none*/
+    }
+    .games-expanded .linescore .team-info .team-name {
+        display: block
+    }
+    .games-expanded .linescore .runs,
+    .games-expanded .linescore .hits,
+    .games-expanded .linescore .errors {
+        width: 9%
+    }
+}
+@media screen and (min-width: 990px) {
+    .games-expanded .linescore .team-info {
+        width: 22%
+    }
+    .games-expanded .linescore .record {
+        padding-top: 9px
+    }
+    .games-expanded .linescore .record .team-record {
+        clear: none;
+        float: left;
+        line-height: 1.5em;
+        padding-left: 4px
+    }
+    .games-expanded .linescore .inning,
+    .games-expanded .linescore .runs,
+    .games-expanded .linescore .hits,
+    .games-expanded .linescore .errors {
+        width: 5.5%
+    }
+    .games-expanded .linescore .inning {
+        display: table-cell
+    }
+}
+.ad-responsive-slot {
+    overflow: hidden
+}
+.ad-responsive-slot a,
+.ad-responsive-slot img {
+    border: 0;
+    outline: none
+}
+.ad,
+.ad-slot-game {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+.ad.visible,
+.ad-slot-game.visible {
+    display: block;
+    visibility: visible
+}
+.ad-slot-game {
+    /*display: none*/;
+    left: 50%;
+    margin-left: -150px;
+    position: absolute;
+    top: 639px;
+    will-change: top;
+    width: 300px
+}
+.ad970 {
+    margin: auto;
+    width: 970px
+}
+.ad970.top {
+    margin-bottom: 8px
+}
+.ad970.bottom {
+    margin-top: 8px
+}
+.ad728x90 {
+    height: 90px;
+    margin: 0 auto;
+    width: 728px
+}
+#featuredAd1 {
+    position: relative;
+    z-index: 0
+}
+#featuredAd1.fixed {
+    position: fixed;
+    top: 0
+}
+#featuredAd1.fixedBottom {
+    bottom: 0;
+    position: fixed
+}
+#featuredAd1.fixed1050 {
+    position: fixed;
+    top: -70px
+}
+#featuredAd1.hugFooter {
+    bottom: 14px;
+    position: absolute
+}
+#featuredAd2 {
+    height: 2px;
+    width: 300px
+}
+.ad300x50,
+.ad573x50 {
+    float: right
+}
+.ad573x50 {
+    height: 50px;
+    width: 573px
+}
+#sponsored-by-slot {
+    max-width: 300px;
+    min-width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 6px;
+    right: 0
+}
+#sbViewToggle {
+    right: 0;
+    position: absolute;
+    top: 0
+}
+#sbViewToggle .ui-button-text {
+    padding: 0
+}
+#sbViewToggle .ui-buttonset {
+    margin: 0;
+    position: relative
+}
+#sbViewToggle .ui-state-active {
+    background: transparent
+}
+#sbViewToggle .label {
+    /*display: none*/
+}
+#sbViewToggle .leagueGamesViewLabel,
+#sbViewToggle .ui-helper-hidden-accessible {
+    background: transparent;
+    background-image: none;
+    border: 0;
+    margin: 0
+}
+#sbViewToggle .leagueGamesViewLabel span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px 0 0;
+    background: url("../images/sprites/view_toggle_sprite.png") no-repeat;
+    text-indent: -999em;
+    overflow: hidden
+}
+#sbViewToggle #leagueGamesViewCondensedLabel span {
+    background-position: -49px -47px;
+    margin-left: -1px
+}
+#sbViewToggle #leagueGamesViewCondensedLabel.ui-state-active span {
+    background-position: -6px -47px
+}
+#sbViewToggle #leagueGamesViewExpandedLabel span {
+    background-position: -49px -6px;
+    margin-right: 0
+}
+#sbViewToggle #leagueGamesViewExpandedLabel.ui-state-active span {
+    background-position: -6px -6px
+}
+.device-desktop #sbViewToggle #leagueGamesViewExpandedLabel span:hover,
+.is-desktop #sbViewToggle #leagueGamesViewExpandedLabel span:hover {
+    background-position: -6px -6px
+}
+.device-desktop #sbViewToggle #leagueGamesViewCondensedLabel span:hover,
+.is-desktop #sbViewToggle #leagueGamesViewCondensedLabel span:hover {
+    background-position: -6px -47px
+}
+@media screen and (max-width: 767px) {
+    #sbViewToggle {
+        /*display: none*/
+    }
+}
+#sbTicker {
+    background: #000;
+    /*display: none*/;
+    width: auto;
+    margin: 0 0 1em 0;
+    padding: 10px 8px 8px
+}
+#sbTicker div {
+    background: transparent;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: left
+}
+#sbTicker .sponsor {
+    color: inherit;
+    position: relative;
+    z-index: 2
+}
+#sbTicker .sponsor span {
+    display: inline-block;
+    padding-left: 6px
+}
+#sbTicker .sponsor img {
+    display: block;
+    height: 28px;
+    left: 100%;
+    margin-left: 4px;
+    position: absolute;
+    top: -7px
+}
+#sbTicker .gameAlert,
+#sbTicker .liveLookIn {
+    cursor: pointer;
+    display: block;
+    font: normal normal 14px/19px arial, sans-serif;
+    font-family: mlb_primary
+}
+#sbTicker .gameAlert:hover,
+#sbTicker .liveLookIn:hover {
+    text-decoration: none
+}
+#sbTicker .gameAlert {
+    color: #8ed3ff
+}
+#sbTicker .liveLookIn {
+    color: #fdcc00
+}
+#sbTicker .liveLookIn>:first-child {
+    margin-right: 5px
+}
+.liveLookIn .watchNow,
+.gameAlert .gamedayLink {
+    float: right;
+    font-style: italic;
+    font-family: arial;
+    font-weight: normal;
+    font-size: 14px
+}
+@media screen and (min-width: 990px) {
+    #sbTicker[data-active="true"] {
+        display: block
+    }
+}
+#dayPicker {
+    display: block;
+    position: relative;
+    width: 100%
+}
+#dayPicker .bam-daypicker-toggle:active,
+#dayPicker .bam-daypicker-next:active,
+#dayPicker .bam-daypicker-previous:active {
+    outline: none
+}
+#dayPicker .bam-daypicker-toggle {
+    width: 73%
+}
+#dayPicker .bam-daypicker-toggle .label-item {
+    display: inline-block;
+    padding-right: 2px;
+    text-transform: capitalize
+}
+#dayPicker .bam-daypicker-toggle .label-item:last-child {
+    padding-right: 0
+}
+#dayPicker .bam-daypicker-toggle .ui-button-text {
+    background: url("../images/generic/calendar_icon.png") no-repeat 0 3px;
+    padding-left: 26px;
+    padding-right: 0;
+    text-transform: capitalize
+}
+#dayPicker .bam-daypicker-next {
+    left: 73%
+}
+.bam-daypicker-calendar-wrap {
+    height: auto;
+    left: 35px;
+    position: absolute;
+    top: 0;
+    width: 73%
+}
+.bam-daypicker-calendar-wrap .bam-daypicker-calendar {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    width: 212px
+}
+.bam-daypicker-calendar-wrap .ui-widget-content {
+    background-image: url("../images/ui/ui-bg_glass_75_dadada_1x400.png")
+}
+.bam-daypicker-calendar-wrap .ui-widget-header {
+    background-image: url("../images/ui/ui-bg_highlight-soft_75_cccccc_1x100.png")
+}
+.bam-daypicker-calendar-wrap .ui-widget-header .ui-icon {
+    background-image: url("../images/ui/ui-icons_222222_256x240.png")
+}
+.lang-es #dayPicker .bam-daypicker-toggle .label-item--3 {
+    text-transform: none
+}
+@media screen and (min-width: 768px) {
+    #dayPicker {
+        width: 310px
+    }
+    #dayPicker .bam-daypicker-toggle {
+        width: 80%
+    }
+    #dayPicker .bam-daypicker-next {
+        left: 80%
+    }
+    .bam-daypicker-calendar-wrap {
+        left: 0;
+        width: 80%
+    }
+}
+@media screen and (min-width: 990px) {
+    #dayPicker {
+        width: 420px
+    }
+    #dayPicker .bam-daypicker-toggle {
+        width: 84%
+    }
+    #dayPicker .bam-daypicker-next {
+        left: 84%
+    }
+    .bam-daypicker-calendar-wrap {
+        width: 64%
+    }
+}
+@media (min-resolution: 124dpi),
+(-webkit-min-device-pixel-ratio: 1.3),
+(min--moz-device-pixel-ratio: 1.3),
+(-o-min-device-pixel-ratio: 4/3),
+(min-device-pixel-ratio: 1.3),
+(min-resolution: 1.3dppx) {
+    #dayPicker .bam-daypicker-toggle .ui-button-text {
+        background: url("../images/generic/calendar_icon@2x.png") no-repeat 0 3px;
+        -webkit-background-size: 22px auto;
+        -moz-background-size: 22px auto;
+        background-size: 22px auto
+    }
+}
+@media screen and (max-width: 629px) {
+    .bam-daypicker-calendar-wrap {
+        left: -3px;
+        width: 100%
+    }
+    .bam-daypicker-calendar-wrap .ui-datepicker,
+    .bam-daypicker-calendar-wrap .bam-daypicker-calendar {
+        width: 100%
+    }
+    .bam-daypicker-calendar-wrap .ui-datepicker td {
+        padding: 2px 1px
+    }
+    .bam-daypicker-calendar-wrap .ui-datepicker td a {
+        padding: .5em
+    }
+}
+#drawer {
+    /*display: none*/;
+    overflow: hidden
+}
+#drawer .col3 {
+    background: transparent
+}
+@media screen and (min-width: 990px) {
+    #drawer {
+        display: block
+    }
+}
+.banner-container-wrap {
+    /*display: none*/;
+    height: auto;
+    margin-bottom: -74%;
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 0
+}
+.banner--hrd {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    left: 0;
+    max-width: 976px;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+.banner--hrd.banner--hrd_pre {
+    background-image: url("../images/hrd/2015HRD_ad_unit_pre_976x200@2x.jpg")
+}
+.banner--hrd.banner--hrd_live {
+    background-image: url("../images/hrd/2015HRD_ad_unit_live_976x200@2x.jpg")
+}
+[data-team-code="tor"] .banner--hrd.banner--hrd_pre {
+    background-image: url("../images/hrd/2015HRD_ad_unit_pre_tor_976x200@2x.jpg")
+}
+[data-team-code="tor"] .banner--hrd.banner--hrd_live {
+    background-image: url("../images/hrd/2015HRD_ad_unit_live_tor_976x200@2x.jpg")
+}
+[data-ymd-current="2015-07-13"] .banner-container-wrap {
+    display: block
+}
+@media screen and (min-width: 630px) {
+    #scoreboard_index .ad-slot-game-responsive,
+    #scoreboard2_index .ad-slot-game-responsive {
+        /*display: none*/ !important
+    }
+}
+@media screen and (max-width: 767px) {
+    #scoreboard_index .column.span-9,
+    #scoreboard2_index .column.span-9 {
+        width: 100%
+    }
+    #scoreboard_index .column.secondary.right,
+    #scoreboard2_index .column.secondary.right {
+        /*display: none*/
+    }
+}
+@media screen and (min-width: 768px) {
+    #scoreboard_index .column.primary,
+    #scoreboard2_index .column.primary {
+        width: 418px
+    }
+    #scoreboard_index .column.secondary,
+    #scoreboard2_index .column.secondary {
+        margin-top: 42px;
+        width: 300px
+    }
+}
+@media screen and (min-width: 990px) {
+    #scoreboard_index .column.primary,
+    #scoreboard2_index .column.primary {
+        width: 650px
+    }
+    #scoreboard_index .column.secondary,
+    #scoreboard2_index .column.secondary {
+        width: 300px
+    }
+}
+.ui-helper-hidden {
+    /*display: none*/
+}
+.ui-helper-hidden-accessible {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px)
+}
+.ui-helper-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none
+}
+.ui-helper-clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+.ui-helper-clearfix {
+    display: inline-block
+}
+.ui-helper-zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute
+}
+.ui-state-disabled {
+    cursor: default !important
+}
+.ui-icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat
+}
+.ui-widget-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.ui-widget-content {
+    border: 1px solid #aaa;
+    background: #fff url(../bower_components/jqueryui-amd/themes/base/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+    color: #222
+}
+.ui-widget-content a {
+    color: #222
+}
+.ui-widget-header {
+    border: 1px solid #aaa;
+    background: #ccc url(../bower_components/jqueryui-amd/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+    color: #222;
+    font-weight: bold
+}
+.ui-widget-header a {
+    color: #222
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #d3d3d3;
+    background: #e6e6e6 url(../bower_components/jqueryui-amd/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #555
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+    color: #555;
+    text-decoration: none
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid #999;
+    background: #dadada url(../bower_components/jqueryui-amd/themes/base/images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #212121
+}
+.ui-state-hover a,
+.ui-state-hover a:hover {
+    color: #212121;
+    text-decoration: none
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    border: 1px solid #aaa;
+    background: #fff url(../bower_components/jqueryui-amd/themes/base/images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #212121
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    color: #212121;
+    text-decoration: none
+}
+.ui-widget:active {
+    outline: none
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #fcefa1;
+    background: #fbf9ee url(../bower_components/jqueryui-amd/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x;
+    color: #363636
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+    color: #363636
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+    border: 1px solid #cd0a0a;
+    background: #fef1ec url(/shared/style/images/ui-bg_inset-soft_95_fef1ec_1x100.png) 50% bottom repeat-x;
+    color: #cd0a0a
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+    color: #cd0a0a
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+    color: #cd0a0a
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+    font-weight: bold
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+    opacity: .7;
+    font-weight: normal
+}
+.ui-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../bower_components/jqueryui-amd/themes/base/images/ui-icons_222222_256x240.png)
+}
+.ui-widget-content .ui-icon {
+    background-image: url(../bower_components/jqueryui-amd/themes/base/images/ui-icons_222222_256x240.png)
+}
+.ui-widget-header .ui-icon {
+    background-image: url(../bower_components/jqueryui-amd/themes/base/images/ui-icons_222222_256x240.png)
+}
+.ui-state-default .ui-icon {
+    background-image: url(../bower_components/jqueryui-amd/themes/base/images/ui-icons_888888_256x240.png)
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+    background-image: url(../bower_components/jqueryui-amd/themes/base/images/ui-icons_454545_256x240.png)
+}
+.ui-state-active .ui-icon {
+    background-image: url(../bower_components/jqueryui-amd/themes/base/images/ui-icons_454545_256x240.png)
+}
+.ui-state-highlight .ui-icon {
+    background-image: url(../bower_components/jqueryui-amd/themes/base/images/ui-icons_2e83ff_256x240.png)
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+    background-image: url(../bower_components/jqueryui-amd/themes/base/images/ui-icons_cd0a0a_256x240.png)
+}
+.ui-icon-circle-triangle-e {
+    background-position: -48px -192px
+}
+.ui-icon-circle-triangle-s {
+    background-position: -64px -192px
+}
+.ui-icon-circle-triangle-w {
+    background-position: -80px -192px
+}
+.ui-icon-circle-triangle-n {
+    background-position: -96px -192px
+}
+.ui-corner-tl {
+    border-top-left-radius: 4px
+}
+.ui-corner-tr {
+    border-top-right-radius: 4px
+}
+.ui-corner-bl {
+    border-bottom-left-radius: 4px
+}
+.ui-corner-br {
+    border-bottom-right-radius: 4px
+}
+.ui-corner-top {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+.ui-corner-bottom {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+.ui-corner-right {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+.ui-corner-left {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+.ui-corner-all {
+    border-radius: 4px
+}
+.ui-button {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin-right: .1em;
+    text-decoration: none !important;
+    cursor: pointer;
+    text-align: center;
+    zoom: 1;
+    overflow: visible
+}
+.ui-button-icon-only {
+    width: 2.2em
+}
+button.ui-button-icon-only {
+    width: 2.4em
+}
+.ui-button-icons-only {
+    width: 3.4em
+}
+button.ui-button-icons-only {
+    width: 3.7em
+}
+.ui-button .ui-button-text {
+    display: block;
+    line-height: 1.4
+}
+.ui-button-text-only .ui-button-text {
+    padding: .4em 1em
+}
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+    padding: .4em;
+    text-indent: -9999999px
+}
+.ui-button-text-icon-primary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+    padding: .4em 1em .4em 2.1em
+}
+.ui-button-text-icon-secondary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+    padding: .4em 2.1em .4em 1em
+}
+.ui-button-text-icons .ui-button-text {
+    padding-left: 2.1em;
+    padding-right: 2.1em
+}
+input.ui-button {
+    padding: .4em 1em
+}
+.ui-button-icon-only .ui-icon,
+.ui-button-text-icon-primary .ui-icon,
+.ui-button-text-icon-secondary .ui-icon,
+.ui-button-text-icons .ui-icon,
+.ui-button-icons-only .ui-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px
+}
+.ui-button-icon-only .ui-icon {
+    left: 50%;
+    margin-left: -8px
+}
+.ui-button-text-icon-primary .ui-button-icon-primary,
+.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-icons-only .ui-button-icon-primary {
+    left: .5em
+}
+.ui-button-text-icon-secondary .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+    right: .5em
+}
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+    right: .5em
+}
+.ui-buttonset {
+    margin-right: 7px
+}
+.ui-buttonset .ui-button {
+    margin-left: 0;
+    margin-right: -0.3em
+}
+button.ui-button::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move
+}
+.ui-datepicker {
+    width: 17em;
+    padding: .2em .2em 0;
+    /*display: none*/
+}
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: .2em 0;
+    width: 99%
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+    position: absolute;
+    top: 2px;
+    width: 1.8em;
+    height: 1.8em
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+    top: 1px
+}
+.ui-datepicker .ui-datepicker-prev {
+    left: 2px
+}
+.ui-datepicker .ui-datepicker-next {
+    right: 2px
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 1px
+}
+.ui-datepicker .ui-datepicker-next-hover {
+    right: 1px
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    top: 50%;
+    margin-top: -8px
+}
+.ui-datepicker .ui-datepicker-title {
+    margin: 0 2.3em;
+    line-height: 1.8em;
+    text-align: center
+}
+.ui-datepicker .ui-datepicker-title select {
+    font-size: 1em;
+    margin: 1px 0
+}
+.ui-datepicker select.ui-datepicker-month-year {
+    width: 100%
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+    width: 49%
+}
+.ui-datepicker table {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em
+}
+.ui-datepicker th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0
+}
+.ui-datepicker td {
+    border: 0;
+    padding: 1px
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+    display: block;
+    padding: .2em;
+    text-align: right;
+    text-decoration: none
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+    background-image: none;
+    margin: .7em 0 0 0;
+    padding: 0 .2em;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+    float: right;
+    margin: .5em .2em .4em;
+    cursor: pointer;
+    padding: .2em .6em .3em .6em;
+    width: auto;
+    overflow: visible
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+    float: left
+}
+.ui-draggable .ui-dialog-titlebar {
+    cursor: move
+}
+.ui-widget {
+    font-size: 12px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+.ui-widget .ui-widget {
+    font-size: 12px
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-size: 14px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    background: #f3f3f3;
+    background: -moz-linear-gradient(top, #f3f3f3 0, #fafafa 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f3f3f3), color-stop(100%, #fafafa))
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+    background: #c0c0c0;
+    background: -moz-linear-gradient(top, #c0c0c0 0, #e9e9e9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c0c0c0), color-stop(100%, #e9e9e9))
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+    background-image: none;
+    opacity: .35
+}
+.ui-state-disabled a {
+    text-decoration: none
+}
+.bam-daypicker .bam-daypicker-previous,
+.bam-daypicker .bam-daypicker-next {
+    background: url(http://mlb.mlb.com/images/scoreboard/calendar_sprite.png) no-repeat;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    text-indent: -999em
+}
+.bam-daypicker .bam-daypicker-toggle {
+    margin: 0;
+    width: 220px;
+    background-color: #f3f3f3;
+    border-radius: 0;
+    height: 35px;
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    position: absolute;
+    border-left: none;
+    border-right: none
+}
+.bam-daypicker .bam-daypicker-previous {
+    background-position: -7px -8px
+}
+.bam-daypicker .bam-daypicker-next {
+    background-position: -49px -8px;
+    left: 220px
+}
+.bam-daypicker .bam-daypicker-previous.ui-state-hover {
+    background-position: -7px -47px
+}
+.bam-daypicker .bam-daypicker-next.ui-state-hover {
+    background-position: -49px -47px
+}
+.bam-daypicker-calendar {
+    left: 50px
+}
+.bam-daypicker .bam-daypicker-toggle .ui-button-text {
+    font-family: mlb_primary;
+    font-size: 16px;
+    background-position-y: -259px
+}
+.bam-daypicker .bam-daypicker-toggle .ui-button-text,
+.bam-monthpicker .bam-monthpicker-toggle .ui-button-text {
+    padding-right: 29px;
+    display: inline;
+    background: url(../images/mlb.png) no-repeat right -254px
+}
+#LiveLookinPlayer {
+    /*display: none*/;
+    position: absolute;
+    background: no-repeat;
+    top: 0;
+    left: 0;
+    width: 680px;
+    height: 460px;
+    overflow: hidden;
+    z-index: 999999
+}
+#LiveLookinPlayer .zPlayerInner {
+    margin: 0 auto;
+    background: #222;
+    overflow: hidden;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 0;
+    height: 0
+}
+#LiveLookinPlayer .zPlayerClipInfo {
+    width: auto;
+    overflow: hidden;
+    margin-top: 20px
+}
+#LiveLookinPlayer .zPlayerHeadline {
+    float: left;
+    font: bold 12px arial, helvetica;
+    color: #fff;
+    margin-top: 2px;
+    margin-left: 9px;
+    text-indent: 166px;
+    margin-left: 0;
+    width: 376px;
+    overflow: hidden
+}
+#LiveLookinPlayer .zPlayerCloseBtn {
+    text-indent: -100px;
+    overflow: hidden;
+    float: right;
+    margin-right: 8px;
+    width: 47px;
+    height: 15px;
+    display: block;
+    background: url(http://mlb.mlb.com/shared/images/bam/zPlayer/buttonClose.png) no-repeat;
+    cursor: pointer
+}
+#LiveLookinPlayer .zPlayerCloseBtn img {
+    border: 0
+}
+#LiveLookinPlayer .zPlayer_flvContainer {
+    margin: 4px 8px 8px 9px
+}
+#LiveLookinPlayer .zPlayer_leaveBehind {
+    /*display: none*/
+}
+#LiveLookinPlayer .autoplay {
+    float: right;
+    margin-right: 12px;
+    width: 205px;
+    height: 15px;
+    background: url(http://mlb.mlb.com/shared/images/bam/zPlayer/toggleAutoplay_check3.png)
+}
+#LiveLookinPlayer .autoplay-disabled {
+    background-position: 0 -15px
+}
+#LiveLookinPlayer782x610AdTopCenter {
+    /*display: none*/;
+    position: absolute;
+    background: no-repeat;
+    top: 0;
+    left: 0;
+    width: 782px;
+    height: 610px;
+    overflow: hidden;
+    z-index: 999999
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayerInner {
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #2d3e5a
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayerClipInfo {
+    width: auto;
+    overflow: hidden;
+    margin-top: 20px
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayerClipInfo .autoplay {
+    float: right;
+    margin-right: 12px;
+    width: 205px;
+    height: 15px;
+    background: url(/shared/images/bam/zPlayer/toggleAutoplay_check3.png);
+    margin-top: 10px
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayerClipInfo .autoplay-disabled {
+    background-position: 0 -15px
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayerHeadline {
+    float: left;
+    font: bold italic 16px helvetica neue, arial;
+    text-shadow: 2px 2px 2px #111;
+    color: #fff;
+    margin-top: 8px;
+    margin-left: 45px
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayerCloseBtn {
+    text-indent: -100px;
+    overflow: hidden;
+    float: right;
+    margin-right: 18px;
+    width: 47px;
+    height: 15px;
+    display: block;
+    background: url(/shared/images/bam/zPlayer/buttonClose.png) no-repeat;
+    cursor: pointer;
+    margin-top: 10px
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayerCloseBtn img {
+    border: 0
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayer_flvContainer {
+    margin: 25px 8px 8px 74px;
+    position: relative
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayer_leaveBehind {
+    /*display: none*/
+}
+#LiveLookinPlayer782x610AdTopCenter .zPlayerCompAd {
+    width: 728px;
+    height: 90px;
+    margin: 20px 0 0 28px
+}
+* html #LiveLookinPlayer782x610AdTopCenter .zPlayerCloseBtn {
+    background-image: none;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='/shared/images/bam/zPlayer/buttonClose.png')
+}
+* html #LiveLookinPlayer782x610AdTopCenter .zPlayer_flvContainer {
+    margin-top: 71px
+}
+.zPlayerClipInfo .autoplay {
+    float: right;
+    margin-right: 5px;
+    width: 205px;
+    height: 15px;
+    background: url(http://mlb.mlb.com/shared/images/bam/zPlayer/toggleAutoplay_check3.png)
+}
+.zPlayerClipInfo .autoplay-disabled {
+    background-position: 0 -15px
+}
+#video-player {
+    border: none
+}
+#overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: #fff;
+    opacity: .3
+}
+#zPlayerTmobile {
+    /*display: none*/;
+    position: absolute;
+    background: no-repeat;
+    top: 0;
+    left: 0;
+    width: 814px;
+    height: 617px;
+    overflow: hidden;
+    z-index: 999999
+}
+#zPlayerTmobile .zPlayerInner {
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #2d3e5a
+}
+#zPlayerTmobile .zPlayerClipInfo {
+    width: auto;
+    overflow: hidden;
+    margin-top: 20px
+}
+#zPlayerTmobile .zPlayerHeadline {
+    float: left;
+    font: bold italic 16px helvetica neue, arial;
+    text-shadow: 2px 2px 2px #111;
+    color: #fff;
+    margin-left: 20px
+}
+#zPlayerTmobile .zPlayerCloseBtn {
+    text-indent: -100px;
+    overflow: hidden;
+    float: right;
+    margin-right: 18px;
+    width: 47px;
+    height: 15px;
+    display: block;
+    background: url(http://mlb.mlb.com/shared/images/bam/zPlayer/buttonClose.png) no-repeat;
+    cursor: pointer
+}
+#zPlayerTmobile .zPlayerCloseBtn img {
+    border: 0
+}
+#zPlayerTmobile .zPlayer_flvContainer {
+    margin: 40px 8px 8px 63px;
+    position: relative
+}
+#zPlayerTmobile .zPlayer_leaveBehind {
+    /*display: none*/
+}
+#zPlayerTmobile .zPlayerCompAd {
+    width: 728px;
+    height: 90px;
+    margin: 20px 0 0 44px
+}
+.drawer_container {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpi3LFjBwMMKMnLGwCpB/cePvxALp+JmoaB+EzUNAzEZ6KmYSA+EzUNA4chNQ0bDcPRMBwNw9EwpF8YAgQYAJag7l8BIe+tAAAAAElFTkSuQmCC') #023269;
+    -webkit-box-shadow: inset 0 0 10px #131313;
+    -moz-box-shadow: inset 0 0 10px #131313;
+    box-shadow: inset 0 0 10px #131313;
+    -webkit-font-smoothing: antialiased
+}
+.drawer_container a {
+    color: #fff
+}
+.drawer_container h3 {
+    margin: 0;
+    font-family: mlb_primary;
+    font-size: 18px
+}
+.drawer_container iframe {
+    overflow: hidden
+}
+.drawer_container section.container {
+    background: transparent;
+    position: relative;
+    overflow: hidden
+}
+.drawer_container .open_close {
+    height: 25px;
+    margin: 0 auto 5px;
+    padding: 3px 0;
+    display: block
+}
+.drawer_container .open,
+.drawer_container .close,
+.drawer_container .watch-now {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAaCAYAAABRqrc5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAI5JREFUeNpi/P//PwOlgJEahjCADCGAG4BYAJ8aQgbM/w8B5/EZRIwB/wkZRKwBeA0iZMB7IHaAasZpECEDDKDiAvgMwmUIsgEMWAyaT8g7/VgMQDaoAV2ccdCk2FFDiMvFJEcxTRLbeWokewEsBpGcAbEZRFZRgMsgkgsldIPILh5hBs0nVFAPnhQLEGAACMKTPfveBewAAAAASUVORK5CYII=') no-repeat scroll 38px 1px transparent;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-style: normal;
+    height: 15px;
+    width: 60px
+}
+.drawer_container .watch-now {
+    width: 77px;
+    background: none
+}
+.drawer_container .open {
+    /*display: none*/;
+    background-position: 38px -14px
+}
+.drawer_container .collapsed .open {
+    display: block
+}
+.drawer_container .collapsed .close {
+    /*display: none*/
+}
+.drawer_container .close {
+    background-position: 38px 1px
+}
+.drawer_container .drawer_hdrleft {
+    /*display: none*/
+}
+.drawer_container .mobile .drawer_hdrleft,
+.drawer_container .collapsed .drawer_hdrleft {
+    display: block;
+    color: #fff;
+    font-family: mlb_primary;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 3px;
+    margin-right: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.drawer_container .inner {
+    margin: 0 auto
+}
+.drawer_container .inner ul.drawerColumns {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+.drawer_container .inner ul.drawerColumns li {
+    float: left;
+    width: 320px;
+    overflow: hidden;
+    height: 190px
+}
+.drawer_container .inner p {
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 12px;
+    color: #fff;
+    line-height: 17px;
+    padding: 10px 0 5px;
+    margin: 0
+}
+.drawer_container .inner .drawerColumns .col3 {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAC0CAYAAAAuPxHvAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAslJREFUeNrs2LGK2nAAx/EkNU3wit6ixeGmgyL0GUTwFdxdFR/LxUUHB3e3PoHryVHcHO4UCmeJ6T+UPkMjfD7wh8Rsv+HLH+OyLD9HUZSHky4Wi+x4PH6KAGpiPp9f2u32R3i8xiFYX5bLZWs2mz2fz+emeYA6SZKk6Pf7L/v9/mcVrMdOp/P9dDq1wze3K6BuynB+d7vdH8l6vU5DrB7ECqipuLpoZVn2NblcLrE9gLprtVpZYgbgHqRpGgsWcDcECxAsAMECBAtAsAAECxAsAMECECxAsAAEC0CwAMECECwAwQIEC0CwAAQLECwAwQIQLECwAAQLQLAAwQIQLADBAgQLQLAAwTIBIFgAggUIFoBgAQgWIFgAggUgWIBgAQgWgGABggUgWACCBQgWgGABCBYgWACCBSBYgGABCBaAYAGCBSBYAIIFCBaAYAGCBSBYAIIFCBaAYAEIFiBYAIIFIFiAYAEIFoBgAYIFIFgAggUIFoBgAQgWIFgAggUgWIBgAQgWgGABggUgWACCBQgWgGABggUgWACCBQgWgGABCBYgWACCBSBYgGABCBaAYAGCBSBYAIIFCBaAYAEIFiBYAIIFIFiAYAEIFoBgAYIFIFgAggUIFoBgAYIFIFgAggUIFoBgAQgWIFgAggUgWIBgAQgWgGABggUgWACCBQgWgGABCBYgWACCBSBYgGABCBaAYAGCBSBYAIIFCBaAYAGCBSBYAIIFCBaAYAEIFiBYAIIFIFiAYAEIFoBgAYIFIFgAggUIFoBgAQgWIFgAggUgWIBgAQgWwD9xkNxut9IUwB0EK0oajUZhCqDums1mlEwmk195nl/D+80kQE2Vo9HoIy7LMh6Px0+bzeZbURRpdfOyDVCXUFVnOBy+73a71ypY1R/v+Xa77axWq8fD4ZDHf5kK+G+qBvV6vWIwGFyn0+l7+OntjwADAEDaWgdnqGeQAAAAAElFTkSuQmCC') top left no-repeat;
+    width: 300px;
+    height: 180px;
+    position: relative;
+    left: 25px
+}
+.drawer_container .inner .drawerColumns .column h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-top: -3px
+}
+.drawer_container .inner .drawerColumns .column p {
+    color: #fff;
+    line-height: 16px;
+    margin: 8px 0 14px
+}
+.drawer_container ul.drawerRelatedLinks li a {
+    font-size: 12px
+}
+.drawer_container .drawer-ad {
+    margin-top: 15px
+}
+.drawer_container .collapsed .inner .drawerColumns p,
+.drawer_container .collapsed .inner .drawerColumns .drawerRelatedLinks {
+    visibility: hidden
+}
+.drawer_container .col1,
+.drawer_container .col2 {
+    padding-left: 20px
+}
+.drawer_container .collapsed .header .open {
+    display: block;
+    float: right
+}
+.drawer_container .col1 .drawervideo {
+    -webkit-box-shadow: 0 0 8px #000;
+    -moz-box-shadow: 0 0 8px #000;
+    box-shadow: 0 0 8px 3px;
+    height: 180px;
+    width: 320px
+}
+.drawer_container .inner ul.drawerColumns li.col1 {
+    overflow: visible;
+    margin-left: 4px
+}
+.drawer_container .collapsed .inner ul.drawerColumns li.col1 {
+    overflow: hidden
+}
+.drawer_container .vidimg {
+    width: 600px;
+    padding: 10px 0 0 70px
+}
+.drawer_container .inner.noimg {
+    margin: 25px auto
+}
+.drawer_container .cliplist {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 0;
+    width: 866px;
+    height: 90px;
+    border-radius: 5px;
+    -webkit-box-shadow: -2px 1px 3px rgba(255, 255, 255, 0.3), inset -1px 1px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -2px 1px 3px rgba(255, 255, 255, 0.3), inset -1px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: -2px 1px 3px rgba(255, 255, 255, 0.3), inset -1px 1px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3)
+}
+.drawer_container .cliplist li {
+    float: left;
+    padding: 0;
+    margin: 10px 10px 0;
+    position: relative
+}
+.drawer_container .cliplist img {
+    width: 124px;
+    height: 70px
+}
+.drawer_container .cliplist span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 12px;
+    background-color: #000;
+    opacity: .85;
+    display: block;
+    text-align: left;
+    padding: 6px
+}
+.team .drawer_container {
+    background-color: #000
+}
+.drawerRelatedLinks li:before {
+    content: "\2022";
+    color: #fff;
+    padding-right: 5px
+}
+/*# sourceMappingURL=./index-desktop.css.map */
