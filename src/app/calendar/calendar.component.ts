@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { CalendarView, CalendarEvent } from 'angular-calendar';
-import { BaseballService } from '../shared/services/baseball.service';
-import { BoxScore } from '../shared/model/boxScore';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { CalendarEvent } from 'angular-calendar';
 
 @Component({
   selector: 'app-calendar',
@@ -10,31 +8,19 @@ import { BoxScore } from '../shared/model/boxScore';
 })
 export class CalendarComponent implements OnInit {
   
-  // view: CalendarView = CalendarView.Month;
+  viewDate :Date = new Date();
+  @Output() selectedDate = new EventEmitter<Date>();
 
-  // CalendarView = CalendarView;
-
-  viewDate: Date = new Date();
-  viewGameId: string;
-  boxScore: BoxScore;
-
-  // modalData: {
-  //   action: string;
-  //   event: CalendarEvent;
-  // };  
-  constructor(private baseballService : BaseballService) { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
-  getGame(gameId:string):void {
-    this.viewGameId = gameId;
-  }
-
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     this.viewDate = date;
+    this.selectedDate.emit(this.viewDate);
     console.log(date);
     console.log(events);
   }
-
 }

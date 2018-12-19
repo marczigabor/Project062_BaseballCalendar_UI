@@ -15,6 +15,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { JwtInterceptor } from './shared/interceptor/jwt.interceptor';
 import { JsonInterceptor } from './shared/interceptor/json.interceptor';
 import { GameComponent } from './game/game.component';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { GameComponent } from './game/game.component';
     CalendarComponent,
     DayGamesComponent,
     LoginComponent,
-    GameComponent
+    GameComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
