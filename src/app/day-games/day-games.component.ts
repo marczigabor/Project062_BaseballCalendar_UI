@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges, Output, EventEmitter } from '@angular/core';
 import { BaseballService } from '../shared/services/baseball.service';
 import { debug } from 'util';
 import { Scoreboard } from '../shared/model/scoreboard';
@@ -12,11 +12,11 @@ import { Scoreboard } from '../shared/model/scoreboard';
 export class DayGamesComponent implements OnChanges {
 
   @Input() selectedDate: Date; 
+  @Output() selectedGame = new EventEmitter<string>();
+
   scoreboard :Scoreboard;
 
-
   constructor(private baseballService: BaseballService) { }
-
 
   ngOnChanges(changes: SimpleChanges): void {
 
@@ -31,12 +31,12 @@ export class DayGamesComponent implements OnChanges {
     if(this.selectedDate){
       this.baseballService.getGamesByDate(this.selectedDate.getFullYear(), this.selectedDate.getMonth()+1, this.selectedDate.getDate())
       .subscribe(scoreboard => this.scoreboard = scoreboard );
-      // console.log(this.scoreboard.Items);
-      
-      // console.log(this.selectedDate.getFullYear(), this.selectedDate.getMonth()+1, this.selectedDate.getDate());
-
     }  
-    
   }
 
+  selectGame(item :any): void {
+    if (item){
+      this.selectedGame.emit(item.game.id);
+    }
+  } 
 }
