@@ -2,3 +2,19 @@
 @import "../node_modules/angular-calendar/css/angular-calendar.css";
 /*@import "../src/assets/mlb.css";*/
 @import "../src/assets/site.css";
+
+.ad-left {
+    float: left;
+    min-width: 800px;
+}
+
+.ad-right {
+    float: right;
+    margin-left: 10px;
+    height: 600px;
+    overflow: auto;
+}
+  
+.entire-thing {
+    width: 1500px;
+}

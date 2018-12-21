@@ -1,5 +1,14 @@
-<app-calendar (selectedDate)="getGames($event)"></app-calendar>
 
-<app-day-games [selectedDate]="viewDate" (selectedGame)="getGame($event)"></app-day-games>
+<div class="entire-thing">
 
-<app-game [gameId]="viewGameId"></app-game> 
+    <div class="ad-left">
+        <app-calendar class="calendar" (selectedDate)="getGames($event)"></app-calendar>
+    </div>
+    <div class="ad-right">
+        <app-day-games class="games" [selectedDate]="viewDate" (selectedGame)="getGame($event)"></app-day-games>
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+<app-game class="game" [gameId]="viewGameId"></app-game> 
